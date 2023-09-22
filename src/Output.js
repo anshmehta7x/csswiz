@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
-
 export default function Output(props){
-    const [css, setcss] = useState("{\n}");
+
 
     return <div className="output">
-        <p>{css}</p>
+        <div className="css-output">
+            #{props.html[1]}{" {"}
+        <nobr></nobr>
+        {props.css.map((e)=>{
+            return <div>{e}<br></br></div>
+        })}
+        {"}"}
+        </div>
+        <div className="html-output">
+            <p>{`<button id="${props.html[1]}">${props.html[0]}</button>`}</p>
+        </div>
     </div>
-
 }

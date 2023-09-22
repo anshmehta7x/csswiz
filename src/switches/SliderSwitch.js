@@ -5,6 +5,6 @@ export default function SliderSwitch(props){
 
     return <div className="sliderSwitch" style={{display:"flex"}}>
         <h2>{props.label}</h2>
-        <input type="range" min={props.min} max={props.max} onChange={handleChange}></input>
+        <input type="range" defaultValue={props.min} min={props.min} max={props.max} onChange={handleChange}></input>
     </div>
 }
