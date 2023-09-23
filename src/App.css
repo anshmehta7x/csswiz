@@ -1,3 +1,7 @@
+*{
+
+}
+
 .header{
   display: flex;
   flex-direction: row;
@@ -22,7 +26,7 @@
 
 .canvas{
 
-  margin-top: 10vh;
+  margin-top: 15vh;
   border: 4px solid black;
 
 }
