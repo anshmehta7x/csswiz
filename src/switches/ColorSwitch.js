@@ -6,7 +6,7 @@ export default function ColorSwitch({label, onColorChange}){
     }
 
     return <div className="colorSwitch" style={{display:"flex"}}>
-        <h2>{label}</h2>
-        <input type="color" onChange={handleChange}></input>
+        <label for={label}>{label}</label>
+        <input id={label} type="color" onChange={handleChange}></input>
     </div>
 }
