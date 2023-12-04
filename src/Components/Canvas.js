@@ -44,6 +44,7 @@ export default function Canvas(props){
     useEffect(()=>{
         updateCSS();
         updateHTML();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[]);
 
 
