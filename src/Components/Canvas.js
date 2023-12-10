@@ -49,6 +49,7 @@ export default function Canvas(props){
 
 
     return <div className="canvas">
+        <div className="elementGroup" id='previewbuttondiv'>
         <button className="previewbtn" style={{
             color:textcolor,
             backgroundColor:bgcolor,
@@ -60,22 +61,27 @@ export default function Canvas(props){
             }}>
             {text}
         </button>
-
+        </div>
+        <div className="elementGroup">
         <Section title="Text"></Section>
         <TextSwitch label="Button Text" onTextChange={(txt)=>{setText(txt);updateCSS();updateHTML()}}></TextSwitch>
         <ColorSwitch label="Text Color" onColorChange={(clr)=>{settextcolor(clr);updateCSS();updateHTML()}}></ColorSwitch>
         <SliderSwitch label="Font Size" onSliderChange={(size)=>{setfontsize(size);updateCSS();updateHTML()}} min={8} max={100}>px</SliderSwitch>
-
+        </div>
+        <div className="elementGroup">
         <Section title="Border"></Section>
         <ColorSwitch label="Border Color" onColorChange={(clr)=>{setbordercolor(clr);updateCSS();updateHTML()}}></ColorSwitch>
         <SliderSwitch label="Border Size" onSliderChange={(size)=>{setbordersize(size);updateCSS();updateHTML()}} min={0} max={20}>px</SliderSwitch>
         <SliderSwitch label="Border Radius" onSliderChange={(size)=>{setborderradius(size);updateCSS();updateHTML()}} min={0} max={50}>%</SliderSwitch>
         <DropdownSwitch label="Border Type" options={borderTypes} onDropdownChange={(type)=>{setborderType(type);updateCSS();updateHTML()}}></DropdownSwitch>
-
+        </div>
+        <div className="elementGroup">
         <Section title="Body"></Section>
         <ColorSwitch label="Background Color" onColorChange={(clr)=>{setbgColor(clr);updateCSS();updateHTML()}}></ColorSwitch>
-
+        </div>
+        <div className='elementGroup'>
         <Section title="Attributes"></Section>
         <TextSwitch label="Button ID" onTextChange={(txt)=>{setbuttonid(txt);updateCSS();updateHTML()}}></TextSwitch>
+        </div> 
     </div>
 }

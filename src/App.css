@@ -3,7 +3,8 @@
 
 
 .Home{
-  background-color:   white ;
+  background-color:   rgb(49, 49, 49) ;
+  
 }
 
 .Header{
@@ -53,7 +54,46 @@
   margin-bottom: auto;
 }
 
+.MainBody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#previewbuttondiv{
+  background-color: white;
+  padding: 10vh;
+  width: 25vw; /* adjust as needed */
+  height: 25vh; /* adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elementGroup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left ;
+  margin: 2vh;
+  border: 1px solid #000000;
+  color: white;
+  padding: 5vh;
+}
 
+.elementGroup .section{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
+}
 
+.textSwitch, .colorSwitch, .sliderSwitch{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 1vh;
+  padding:1vh;
+}
